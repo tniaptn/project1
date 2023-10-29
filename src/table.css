@@ -1,0 +1,29 @@
+.custom-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 80px;
+    height: 150px;
+}
+
+.custom-table tr {
+    border-bottom: 1px solid #ccc;
+    /* กำหนดเส้นขอบให้กับแถว */
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+    /* สีพื้นหลังสำหรับแถวคู่ */
+}
+
+.custom-table td,
+.custom-table th {
+    text-align: center;
+ 
+}
+.custom-table th {
+    padding: 12px 8px; /* 12px คือ padding ด้านบนและด้านล่าง, 8px คือ padding ด้านซ้ายและด้านขวา */
+  }
+  
+  

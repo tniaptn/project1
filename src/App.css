@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+.tab-bar {
+  background-color: #5B79A4;
+  height: 50px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  background-color: #D9D9D9;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden; /* เพิ่มส่วนนี้เพื่อป้องกัน overflow */
 }
 
-.App-link {
-  color: #61dafb;
+
+.left-box {
+  width: 200px;
+  height: 92vh;
+  background-color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.tab.active {
+  /* CSS เมื่อแท็บถูกเลือก (คลิก) */
+  background-color: #B7C4CF;
+}
+
+.tab-item {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #B7C4CF;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tab-item.active {
+  background-color: #fff;
+  border: 1px solid #50555C; /* กำหนดความหนาของกรอบ */
+  border-radius: 10px; /* กำหนดความโค้งของกรอบ */
+}
+
+
+.menu-item{
+      margin: 10px;
+      
 }
