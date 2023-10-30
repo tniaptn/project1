@@ -1,6 +1,7 @@
 import React from 'react';
-import './table.css';
-const MyTable = () => {
+import './table.css'; // เชื่อมโยงไฟล์ CSS
+
+const Table = ({ roomData, onEditClick }) => {
   return (
     <table className="custom-table">
       <thead>
@@ -13,22 +14,20 @@ const MyTable = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>ข้อมูล 1-1</td>
-          <td>ข้อมูล 1-2</td>
-          <td>ข้อมูล 1-3</td>
-          <td>ข้อมูล 1-3</td>
-          <td>ข้อมูล 1-3</td>
-        </tr>
-        <tr>
-          <td>ข้อมูล 2-1</td>
-          <td>ข้อมูล 2-2</td>
-          <td>ข้อมูล 2-3</td>
-        </tr>
-        {/* เพิ่มแถวข้อมูลต่อไปตามความต้องการ */}
+        {roomData.map((room, index) => (
+          <tr key={index}>
+            <td>{room.roomName}</td>
+            <td>{room.status}</td>
+            <td>{room.outstandingBalance}</td>
+            <td>{room.roomCost}</td>
+            <td>
+              <button className="btn-edit" onClick={() => onEditClick(room)}>แก้ไข</button>
+            </td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
 };
 
-export default MyTable;
+export default Table;

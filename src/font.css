@@ -1,0 +1,11 @@
+/* font.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&display=swap');
+/* In your App.css or font.css file */
+/* In your font.css or App.css file */
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 22px; /* Adjust the font size as needed */
+    /* Additional CSS styles for the body tag if needed */
+  }
+  
+  
