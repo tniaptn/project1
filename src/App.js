@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import MyComponent from './room.js';
+import './font.css';
+import Bill from './bill.js';
+import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState(1);
@@ -51,10 +54,11 @@ function App() {
 
 )}
 
-          {activeTab === 2 && (
+          {activeTab === 3 && (
             <div>
-              {/* เนื้อหาหรือองค์ประกอบของด้านขวาเมื่อแท็บ "ค่าน้ำ/ค่าไฟ" ถูกเลือก */}
+  
               <div className="white-box">ข้อมูลค่าน้ำ/ค่าไฟ</div>
+              <Bill />
             </div>
           )}
           {/* เพิ่มเงื่อนไขสำหรับแท็บอื่น ๆ ด้วย */}

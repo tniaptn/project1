@@ -1,0 +1,74 @@
+.edit-room{
+    padding: 5px 0 0 80px;
+    width: 500px ;
+    height: 550px ;
+    background-color: white ;
+    margin-left: 150px;
+    margin-top: 0px;
+    margin-right: -50px;
+   border-radius: 10px;
+}   
+.edit-room p{
+font-size: 22px;
+
+}   
+select {
+   width: 200px;
+   height: 40px;
+   border-radius: 5px;
+   font-family: 'Noto Sans Thai', sans-serif;
+    /* margin-left: 20px; */
+    text-align: center;
+    font-size: 20px;
+}
+input {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 20px;
+    border: 1px solid #ccc; /* เพิ่มเส้นขอบให้ input */
+    transition: border 0.3s; /* เพิ่มการเปลี่ยนแปลงเมื่อคลิก */
+}
+
+
+.btn {
+    display: flex;
+    height: 45px;
+    gap: 15px; 
+    margin-top: 30px;
+    float: right;
+    margin-right: 70px;
+}
+.btn-save{
+    border: none;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #5B79A4;
+    color: white;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    &:active {
+      background-color:  #41526b; /* New background color when clicked */
+      
+    }
+    &:hover {
+        background-color:   #41526b; /* New background color when clicked */
+      }
+}
+.btn-cancel{
+    border: none;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    &:active {
+      background-color:  #A0A0A0; /* New background color when clicked */
+    }
+    &:hover {
+        background-color:  #A0A0A0; /* New background color when clicked */
+      }
+}
