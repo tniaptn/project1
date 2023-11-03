@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 import MyComponent from './room.js';
 import './font.css';
-import Bill from './bill.js';
+import Bill from './billmain.js';
+import Water from './waterpage.js';
 import 'font-awesome/css/font-awesome.min.css';
+import Room from './roomdetail.js';
 
 function App() {
   const [activeTab, setActiveTab] = useState(1);
@@ -24,7 +26,7 @@ function App() {
               className={`tab-item ${activeTab === 2 ? 'active' : ''}`}
               onClick={() => setActiveTab(2)}
             >
-             ค่าน้ำ/ค่าไฟ
+              ค่าน้ำ/ค่าไฟ
             </div>
             <div
               className={`tab-item ${activeTab === 3 ? 'active' : ''}`}
@@ -36,32 +38,36 @@ function App() {
               className={`tab-item ${activeTab === 4 ? 'active' : ''}`}
               onClick={() => setActiveTab(4)}
             >
-             รายการชำระเงิน
+              ข้อมูลห้องพัก
             </div>
-            <div
-              className={`tab-item ${activeTab === 5 ? 'active' : ''}`}
-              onClick={() => setActiveTab(5)}
-            >
-             รายงาน
-            </div>
+
           </div>
         </div>
         <div className="right-box">
-        {activeTab === 1 && (
+          {activeTab === 1 && (
 
-  
-    <MyComponent />
 
-)}
+            <MyComponent />
 
+          )}
+          {activeTab === 2 && (
+            <div>
+
+              <Water />
+            </div>
+          )}
           {activeTab === 3 && (
             <div>
-  
-              <div className="white-box">ข้อมูลค่าน้ำ/ค่าไฟ</div>
+
               <Bill />
             </div>
           )}
-          {/* เพิ่มเงื่อนไขสำหรับแท็บอื่น ๆ ด้วย */}
+{activeTab === 4 && (
+            <div>
+
+              <Room />
+            </div>
+          )}
         </div>
       </div>
     </div>
