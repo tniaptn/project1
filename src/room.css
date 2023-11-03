@@ -7,7 +7,7 @@
     margin-right: -50px;
    border-radius: 10px;
    &.edit-mode {
-    background-color: transparent; /* สีพื้นหลังที่คุณต้องการเมื่อแสดง EditRoom */
+    background-color: transparent; 
   }
   }
   .menu-tabs-horizontal {

@@ -1,0 +1,10 @@
+.component {
+    width: 1000px;
+    height: 580px;
+    background-color: white;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: -50px;
+   border-radius: 10px;
+   
+  }

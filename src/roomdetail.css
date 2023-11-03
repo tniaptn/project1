@@ -1,0 +1,19 @@
+.room-button {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #0077b6; /* สีพื้นหลังปุ่มเริ่มต้น */
+    color: #ffffff; /* สีข้อความเริ่มต้น */
+    transition: background-color 0.3s; /* เพิ่ม transition เพื่อสร้าง hover effect */
+    font-size: 20px;
+  }
+  
+  .room-button:hover {
+    background-color: #005d86; /* สีพื้นหลังเมื่อนำเมาส์ไปชี้ที่ปุ่ม */
+  }
+  
